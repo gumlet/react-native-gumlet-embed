@@ -49,6 +49,23 @@ function App(): JSX.Element {
           }}>
           <WebView
             mediaPlaybackRequiresUserAction={true}
+            scrollEnabled={false}
+            allowsFullscreenVideo={true}
+            userAgent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+            style={{ height: 240, width: 320, alignSelf: "center", alignContent: "center" }}
+            source={{ uri: 'https://play.gumlet.io/embed/64ec722f869c1d6d33bd3978' }}
+          />
+          <Text>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</Text>
+          <Text>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</Text>
+          <Text>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</Text>
+          <Text>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</Text>
+          <Text>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</Text>
+          <Text>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</Text>
+          <WebView
+            mediaPlaybackRequiresUserAction={true}
+            scrollEnabled={false}
+            allowsFullscreenVideo={true}
+            userAgent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
             style={{ height: 240, width: 320, alignSelf: "center", alignContent: "center" }}
             source={{ uri: 'https://play.gumlet.io/embed/64ec722f869c1d6d33bd3978' }}
           />
