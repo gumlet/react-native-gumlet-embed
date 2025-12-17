@@ -6,7 +6,6 @@
  */
 
 import React from 'react';
-import type { PropsWithChildren } from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -19,10 +18,6 @@ import {
 
 import {
   Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import { WebView } from 'react-native-webview';
 
@@ -48,10 +43,13 @@ function App(): JSX.Element {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <WebView
-            mediaPlaybackRequiresUserAction={true}
             scrollEnabled={false}
             allowsFullscreenVideo={true}
-            userAgent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+            allowsInlineMediaPlayback={true}
+            javaScriptEnabled={true}
+            domStorageEnabled={true}
+            mediaPlaybackRequiresUserAction={false}
+            originWhitelist={['*']}
             style={{ height: 240, width: 320, alignSelf: "center", alignContent: "center" }}
             source={{ uri: 'https://play.gumlet.io/embed/64628b7110f328a292ade85e' }}
           />
@@ -62,10 +60,13 @@ function App(): JSX.Element {
           <Text>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</Text>
           <Text>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups.</Text>
           <WebView
-            mediaPlaybackRequiresUserAction={true}
             scrollEnabled={false}
             allowsFullscreenVideo={true}
-            userAgent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36"
+            allowsInlineMediaPlayback={true}
+            javaScriptEnabled={true}
+            domStorageEnabled={true}
+            mediaPlaybackRequiresUserAction={false}
+            originWhitelist={['*']}
             style={{ height: 240, width: 320, alignSelf: "center", alignContent: "center" }}
             source={{ uri: 'https://play.gumlet.io/embed/64628b7110f328a292ade85e' }}
           />
